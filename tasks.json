@@ -1,0 +1,42 @@
+{   
+    "list": [
+       {
+        "id": "0",
+        "name": "Category 1",
+        "taskList": [
+            {
+                "id": "1",
+                "title": "Task 1",
+                "description": "Task 1 description",
+                "status": true,
+            },
+            {
+                "id": "2",
+                "title": "Task 2",
+                "description": "Task 122 description",
+                "status": true,
+            }
+            ] 
+        },
+        {
+            "id": "1",
+            "name": "Category 2",
+            "taskList": [
+                {
+                    "id": "1",
+                    "title": "Task 1saddas",
+                    "description": "Task 1 description",
+                    "status": true,
+                },
+                {
+                    "id": "2",
+                    "title": "Task 2dasdsa",
+                    "description": "Task 122 description",
+                    "status": true,
+                }
+            ] 
+        }
+    ],
+
+
+}
