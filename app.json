@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ToDoIst",
-    "slug": "todoist",
-    "version": "1.0.0",
+    "name": "ToDoList",
+    "slug": "todolist",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "owner": "eposkk",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#98A8F8"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,7 +24,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#FAF7F0"
       },
       "package": "com.eposkk.ToDoIst"
     },
