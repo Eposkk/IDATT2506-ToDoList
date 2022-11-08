@@ -9,7 +9,6 @@ import {
   Pressable,
   Modal,
   TouchableOpacity,
-  Keyboard,
 } from "react-native"
 import { Task, CategoryTask } from "./schemas/types"
 import { useState, useEffect } from "react"
