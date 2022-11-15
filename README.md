@@ -17,6 +17,6 @@ Last ned : [ToDoList.apk](https://github.com/Eposkk/IDATT2506-ToDoList/releases/
 Kjøring ved hjelp av Expo krever at du har installert en Android emulator (Testet på API level 30) eller at du har en Android enhet med Expo Go lastet ned.
 
 - Klon repoet: https://github.com/Eposkk/IDATT2506-ToDoList.git
-- Kjør kommandoen `npm i` for å installere
+- Kjør kommandoen `npm i` for å installere avhengigheter
 - Kjør kommandoen `npm run start` for å kjøre Expo sitt dev enviorment
-- Skriv deretter `a` i terminalen og Expo vil deretter automatisk koble seg til en tilgjengelig enhet
+- Skriv deretter `a` i terminalen og Expo vil deretter automatisk koble seg til en tilgjengelig enhet og starte applikasjonen
