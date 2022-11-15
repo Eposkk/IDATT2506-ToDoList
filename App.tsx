@@ -15,6 +15,7 @@ import { useState, useEffect } from "react"
 import uuid from "react-native-uuid"
 import { TrashIcon, PlusCircleIcon } from "react-native-heroicons/solid"
 import AsyncStorage from "@react-native-async-storage/async-storage"
+import React from "react"
 
 export default function App() {
   const [text, onChangeText] = useState("")
@@ -25,25 +26,20 @@ export default function App() {
   const [currentIndexDelete, setCurrentIndexDelete] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("0")
   const [categoryName, setCategoryName] = useState("")
-  //Altså denne er drittstygg beklager :(
   const [uglyWorkaround, setUglyWorkaround] = useState(0)
 
   const storeData = async () => {
     try {
       const jsonValue = JSON.stringify(list)
-      await AsyncStorage.setItem("@storage_Key", jsonValue)
-    } catch (e) {
-      // saving error
-    }
+      await AsyncStorage.setItem("@List", jsonValue)
+    } catch (e) {}
   }
 
   const getData = async () => {
     try {
-      const jsonValue = await AsyncStorage.getItem("@storage_Key")
+      const jsonValue = await AsyncStorage.getItem("@List")
       return jsonValue != null ? JSON.parse(jsonValue) : null
-    } catch (e) {
-      // error reading value
-    }
+    } catch (e) {}
   }
 
   const fetchData = async () => {
@@ -466,22 +462,12 @@ const styles = StyleSheet.create({
     color: "black",
     paddingVertical: 10,
   },
-
-  titleCategory: {
-    fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: "black",
-    paddingVertical: 10,
-  },
-
   input: {
     height: 40,
     margin: 12,
     borderWidth: 1,
     padding: 10,
   },
-
   inputCatgeory: {
     height: 40,
     margin: 12,
@@ -489,7 +475,6 @@ const styles = StyleSheet.create({
     padding: 10,
     minWidth: "70%",
   },
-
   button: {
     alignItems: "center",
     backgroundColor: "#DDDDDD",
@@ -535,12 +520,10 @@ const styles = StyleSheet.create({
 
     elevation: 3,
   },
-
   categoryRemoveContainer: {
     paddingTop: 20,
     alignItems: "center",
   },
-
   itemCategory: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -560,7 +543,6 @@ const styles = StyleSheet.create({
 
     elevation: 3,
   },
-
   itemCategorySelected: {
     flexDirection: "row",
     justifyContent: "space-between",
